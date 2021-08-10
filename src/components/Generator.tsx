@@ -11,6 +11,7 @@ const Generator: React.FC = () => {
 	const [useUppercase, setUseUppercase] = useState(true);
 	const [useNumbers, setUseNumbers] = useState(true);
 	const [useSymbols, setUseSymbols] = useState(false);
+	const [buttonText, setButtonText] = useState("Generate password");
 
 	const generatePassword = () => {
 		const options: string = `${useLowercase ? "a-z" : ""}${
@@ -21,8 +22,12 @@ const Generator: React.FC = () => {
 	};
 
 	return (
-		<main className="my-10 max-w-screen-sm rounded-3xl bg-white shadow-2xl p-10 flex flex-col gap-5">
-			<Screen password={password} />
+		<main className="w-80 my-5 sm:my-10 p-5 rounded-lg bg-opacity-30 bg-deus-lightest shadow-2xl flex flex-col gap-5 break-all">
+			<Screen
+				password={password}
+				setPassword={setPassword}
+				setButtonText={setButtonText}
+			/>
 
 			<Options
 				length={length}
@@ -37,11 +42,8 @@ const Generator: React.FC = () => {
 				setUseSymbols={setUseSymbols}
 			/>
 
-			<Button
-				title="Generate password"
-				onClick={() => generatePassword()}
-			>
-				Generate password
+			<Button title={buttonText} onClick={() => generatePassword()}>
+				{buttonText}
 			</Button>
 		</main>
 	);

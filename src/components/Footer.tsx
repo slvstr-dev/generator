@@ -1,7 +1,7 @@
 const Footer: React.FC = () => (
 	<footer className="text-center">
 		<a
-			className="text-yellow-400"
+			className="text-deus"
 			href="https://slvstr.dev"
 			target="_blank"
 			rel="noreferrer"

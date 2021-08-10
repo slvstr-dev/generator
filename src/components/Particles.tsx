@@ -31,7 +31,7 @@ const Particles: React.FC = () => {
 				},
 				draw() {
 					p5.noStroke();
-					p5.fill("rgba(148, 22, 127, .5)");
+					p5.fill("rgba(253, 216, 112, .5)");
 					p5.circle(this.position.x, this.position.y, this.size * 2);
 				},
 				edges() {
@@ -55,7 +55,7 @@ const Particles: React.FC = () => {
 						if (d < 120) {
 							const alpha = p5.map(d, 0, 120, 0, 0.25);
 
-							p5.stroke(`rgba(233, 52, 121, ${alpha})`);
+							p5.stroke(`rgba(255, 246, 159, ${alpha})`);
 							p5.line(
 								this.position.x,
 								this.position.y,
@@ -70,7 +70,7 @@ const Particles: React.FC = () => {
 	};
 
 	const draw = (p5: p5Types) => {
-		p5.background("rgb(48, 3, 80)");
+		p5.background("rgb(53, 20, 9)");
 
 		particles.forEach((particle: any, idx: any) => {
 			particle.update();

@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 body {
-	@apply bg-purple-900;
+	@apply bg-deus-darkest text-deus-darkest;
+	font-family: "Gugi", cursive;
 }
 
 svg {
 	@apply w-6 h-auto;
-	@apply stroke-current text-purple-600;
+	@apply stroke-2;
 }

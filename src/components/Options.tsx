@@ -38,7 +38,7 @@ const Options: React.FC<OptionsProps> = ({
 
 	return (
 		<>
-			<div className="mt-5 flex gap-5">
+			<div className="mt-5 flex justify-between gap-5">
 				<Button
 					inactive={length <= 4}
 					title="Decrease password length"
@@ -53,15 +53,15 @@ const Options: React.FC<OptionsProps> = ({
 				/>
 
 				<Button
-					inactive={length >= 32}
+					inactive={length >= 24}
 					title="Increase password length"
-					onClick={() => length < 32 && setLength(length + 1)}
+					onClick={() => length < 24 && setLength(length + 1)}
 				>
 					<Plus />
 				</Button>
 			</div>
 
-			<div className="mb-5 flex gap-5">
+			<div className="mb-5 flex justify-between gap-5">
 				<Button
 					inactive={!useLowercase}
 					title="Include lowercase letters"

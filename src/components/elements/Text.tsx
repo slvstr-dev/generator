@@ -6,7 +6,7 @@ interface TextProps {
 }
 
 const Text: React.FC<TextProps> = ({ classNames, text, children }) => (
-	<div className={`bg-gray-200 rounded-md p-3 ${classNames}`}>
+	<div className={`rounded-lg bg-opacity-95 bg-white p-3 ${classNames}`}>
 		{text}
 
 		{children}

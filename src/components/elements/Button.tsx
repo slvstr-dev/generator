@@ -1,5 +1,4 @@
 interface ButtonProps {
-	color?: string;
 	inactive?: boolean;
 	title: string;
 	onClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -8,7 +7,6 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-	color = "green",
 	inactive,
 	title,
 	onClick,
@@ -16,15 +14,13 @@ const Button: React.FC<ButtonProps> = ({
 	children,
 }) => (
 	<button
-		className={`rounded-md p-3 ${
+		className={`rounded-full p-3 bg-opacity-90 hover:bg-opacity-100 ${
 			inactive
-				? "bg-gray-100 hover:bg-gray-200 active:bg-gray-300"
-				: `bg-${color}-400`
+				? "bg-gray-100 active:bg-gray-300 text-deus active:text-white"
+				: "bg-deus-light text-deus-darkest hover:text-deus-dark active:text-white"
 		} ${
-			disabled
-				? "cursor-not-allowed"
-				: `hover:bg-${color}-500 active:bg-${color}-600`
-		}`}
+			disabled ? "cursor-not-allowed" : "active:bg-deus"
+		} transition-colors duration-250 ease-in-out`}
 		title={title}
 		onClick={onClick}
 		disabled={disabled}
