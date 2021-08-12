@@ -22,7 +22,7 @@ const Generator: React.FC = () => {
 	};
 
 	return (
-		<main className="w-80 p-5 rounded-lg bg-opacity-30 bg-deus-lightest shadow-2xl flex flex-col gap-5 break-all">
+		<main className="w-80 my-5 md:my-10 p-5 rounded-lg bg-opacity-30 bg-deus-lightest shadow-2xl flex flex-col gap-5 break-all">
 			<Screen
 				password={password}
 				setPassword={setPassword}

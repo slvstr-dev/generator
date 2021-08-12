@@ -1,5 +1,5 @@
 const Footer: React.FC = () => (
-	<footer className="py-5 sm:py-10 text-center">
+	<footer className="text-center">
 		<a
 			className="text-deus-lightest"
 			href="https://slvstr.dev"
