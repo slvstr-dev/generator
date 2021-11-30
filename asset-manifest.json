@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/generator/static/css/main.cbc86f50.chunk.css",
+    "main.js": "/generator/static/js/main.4daf4933.chunk.js",
+    "main.js.map": "/generator/static/js/main.4daf4933.chunk.js.map",
+    "runtime-main.js": "/generator/static/js/runtime-main.3bbf31d0.js",
+    "runtime-main.js.map": "/generator/static/js/runtime-main.3bbf31d0.js.map",
+    "static/js/2.514dd33d.chunk.js": "/generator/static/js/2.514dd33d.chunk.js",
+    "static/js/2.514dd33d.chunk.js.map": "/generator/static/js/2.514dd33d.chunk.js.map",
+    "index.html": "/generator/index.html",
+    "static/css/main.cbc86f50.chunk.css.map": "/generator/static/css/main.cbc86f50.chunk.css.map",
+    "static/js/2.514dd33d.chunk.js.LICENSE.txt": "/generator/static/js/2.514dd33d.chunk.js.LICENSE.txt",
+    "static/media/floppy.670e5adc.svg": "/generator/static/media/floppy.670e5adc.svg",
+    "static/media/lowercase.a3590e07.svg": "/generator/static/media/lowercase.a3590e07.svg",
+    "static/media/minus.7bdd85b1.svg": "/generator/static/media/minus.7bdd85b1.svg",
+    "static/media/number.a85cd29e.svg": "/generator/static/media/number.a85cd29e.svg",
+    "static/media/plus.b59627ff.svg": "/generator/static/media/plus.b59627ff.svg",
+    "static/media/symbol.b43212d2.svg": "/generator/static/media/symbol.b43212d2.svg",
+    "static/media/uppercase.8ec6b852.svg": "/generator/static/media/uppercase.8ec6b852.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bbf31d0.js",
+    "static/js/2.514dd33d.chunk.js",
+    "static/css/main.cbc86f50.chunk.css",
+    "static/js/main.4daf4933.chunk.js"
+  ]
+}
